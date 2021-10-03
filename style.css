@@ -1,0 +1,144 @@
+@import url("S-Core-Dream-light/s-core-dream.css");
+
+.bodyletter {
+    font-family: "s-core-dream-light", sans-serif; !important;
+    color: #000000;
+    padding: 1%;
+    font-size: medium;
+}
+
+.Menu {
+    font-family: "s-core-dream-light", sans-serif;
+    height: 100px; 
+    width: 100%;
+}
+
+.logo {
+  float: left;
+  background-color: white;
+  width: 16%;
+}
+
+.list {       
+    font-family: "s-core-dream-light", sans-serif;
+    float: left;      
+    line-height: 50px;         
+    vertical-align: middle;     
+    text-align: center;  
+    width: 14%;      
+    background-color: #A31432;
+    font-size: 20px;
+    text-decoration:none;
+    color : white;
+    transition-property: all;
+    transition-duration: 0.4s; 
+}
+.list:hover {          
+    color: white;
+    background-color: #4d4d4d;  
+}
+
+.box {
+  font-family: "s-core-dream-light", sans-serif;
+  float: right;           
+  text-align: center;
+  width: 30%;      
+  background-color: black;
+  font-size: 12px;
+  text-decoration:none;
+  color : white;
+  transition-property: all;
+  transition-duration: 0.4s; 
+  padding: 10%
+}
+
+
+img.scale {
+    width: 2%;
+    border-radius: 5%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    margin: 2%;
+    
+}
+img.scale:hover {
+    transform: scale(1.5);
+}
+img.scale:focus {
+    transform: scale(3);
+}
+
+#mark{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+#sub {
+  /* font-family: "s-core-dream-light", sans-serif; */
+  /* font-size: 12px; */
+  float: right;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 1px;
+  /* height: 600px; */
+  /* color: white; */
+  /* padding: 10px; */
+  /* background-color: black; */
+  transition: ease 0.5s, margin-top 1s ease-out 0.5s;
+  opacity: 0;
+  z-index: 1;
+}
+
+
+#hover {
+    display: none;
+    position: relative;
+    /* top: -25px; */
+}
+/* 
+:hover {
+} */
+
+:hover + #sub {
+    display: block;
+    width: 45%;
+    /* height: 600px; */
+    /* margin-top: 20px; */
+    opacity: 0.8;  
+}
+
+p.typing-txt{
+  font-family: "s-core-dream-light", sans-serif;
+  position:absolute;
+  display: inline-block;
+  height: 500px; overflow: hidden;
+  animation: typingAni 1s steps(20, end) 1;
+  left: 70%;
+  top: 30%;
+}
+p.typing-txt::after{
+  position:absolute; 
+  display:block;
+  content:""; 
+  width: 20px; 
+  height: 13px;
+  top : 3px;
+  right:0; 
+  border-right: 1px solid #000;
+  animation: cursor 0.5s step-end infinite;
+}
+@keyframes typingAni {
+  0%{width:0%}
+  100%{width: 150px};
+}
+@keyframes cursor{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
